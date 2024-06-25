@@ -33,7 +33,6 @@ intArray::intArray(const intArray& other)
 intArray::~intArray()
 {
 	delete[] _array;
-	delete[] newArray
 }
 
 void intArray::setElement(int index, int value)
@@ -95,13 +94,13 @@ void intArray::FindValue(int value) const
 		if (_array[i] == value)
 		{
 			too = true;
-			std::cout << "Ýëåìåíò " << value << " íàõîäèòñÿ â ÿ÷åéêå ïîä èíäåêñîì: " << i << std::endl;
+			std::cout << "ÃÃ«Ã¥Ã¬Ã¥Ã­Ã² " << value << " Ã­Ã ÃµÃ®Ã¤Ã¨Ã²Ã±Ã¿ Ã¢ Ã¿Ã·Ã¥Ã©ÃªÃ¥ Ã¯Ã®Ã¤ Ã¨Ã­Ã¤Ã¥ÃªÃ±Ã®Ã¬: " << i << std::endl;
 		}
 
 	}
 	if (too == false)
 	{
-		std::cout << "Äàííîãî ýëåìåíòà íåòó â êîíòåéíåðå!" << std::endl;
+		std::cout << "Ã„Ã Ã­Ã­Ã®Ã£Ã® Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã  Ã­Ã¥Ã²Ã³ Ã¢ ÃªÃ®Ã­Ã²Ã¥Ã©Ã­Ã¥Ã°Ã¥!" << std::endl;
 	}
 }
 
